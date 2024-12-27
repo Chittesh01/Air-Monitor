@@ -61,7 +61,7 @@ main-build: 001SensorTesting.elf secondary-outputs
 
 # Tool invocations
 001SensorTesting.elf 001SensorTesting.map: $(OBJS) $(USER_OBJS) C:\Users\Oazis\Desktop\University\Summer\ Research\ Project\STM32project\Embedded-C\My_workspace\target\001SensorTesting\STM32F103RBTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "001SensorTesting.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\My_workspace\target\001SensorTesting\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="001SensorTesting.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+	arm-none-eabi-gcc -o "001SensorTesting.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\My_workspace\target\001SensorTesting\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="001SensorTesting.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
