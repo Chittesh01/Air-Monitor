@@ -1,10 +1,65 @@
-17:55:32 **** Incremental Build of configuration Debug for project STM32Proj ****
+19:18:14 **** Incremental Build of configuration Debug for project STM32Proj ****
 make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:215:38: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  215 |   HAL_SPI_Transmit(&hspi2, userdata, strlen(userdata), HAL_MAX_DELAY);
+      |                                      ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:215:38: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+  215 |   HAL_SPI_Transmit(&hspi2, userdata, strlen(userdata), HAL_MAX_DELAY);
+      |                                      ^~~~~~
+../Core/Src/main.c:215:38: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:215:28: warning: pointer targets in passing argument 2 of 'HAL_SPI_Transmit' differ in signedness [-Wpointer-sign]
+  215 |   HAL_SPI_Transmit(&hspi2, userdata, strlen(userdata), HAL_MAX_DELAY);
+      |                            ^~~~~~~~
+      |                            |
+      |                            char *
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:330,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h:675:76: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  675 | HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                             ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:244:11: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  244 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:244:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  244 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:244:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:248:11: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  248 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:248:11: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c:248:11: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:248:11: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c:255:11: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  255 |           sprintf(strOut, "SPI: Received %02X - %02X", buffer1[0], buffer1[1]);
+      |           ^~~~~~~
+../Core/Src/main.c:255:11: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:255:11: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:255:11: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+arm-none-eabi-gcc -o "STM32Proj.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Proj.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Proj.elf
+ 
 arm-none-eabi-size  STM32Proj.elf 
+arm-none-eabi-objdump -h -S STM32Proj.elf  > "STM32Proj.list"
    text	   data	    bss	    dec	    hex	filename
-  23772	    468	   2076	  26316	   66cc	STM32Proj.elf
+  28180	    468	   2268	  30916	   78c4	STM32Proj.elf
 Finished building: default.size.stdout
  
+Finished building: STM32Proj.list
+ 
 
-17:55:32 Build Finished. 0 errors, 0 warnings. (took 140ms)
+19:18:14 Build Finished. 0 errors, 9 warnings. (took 661ms)
 

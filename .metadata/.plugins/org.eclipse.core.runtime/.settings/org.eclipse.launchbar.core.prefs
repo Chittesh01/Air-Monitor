@@ -7,3 +7,4 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:001SensorTesting\ (1)/activeLau
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:001SensorTesting\ (1)/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:001SensorTesting/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:001SensorTesting/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:STM32Proj/activeLaunchMode=debug

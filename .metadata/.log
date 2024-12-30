@@ -201,3 +201,561 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-12-29 13:44:07.090
 !MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2024-12-30 09:12:56.661 -----------------------------------------------
+eclipse.buildId=Version 1.17.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-12-30 09:13:09.193
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-12-30 09:13:09.193
+!MESSAGE Log4j2 initialized with config file C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-12-30 09:13:13.432
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.ui.workbench 4 2 2024-12-30 09:13:14.763
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.cdt.managedbuilder.core.IManagedBuildInfo.getDefaultConfiguration()" because "buildInfo" is null
+	at com.st.stm32cube.ide.mcu.build.ui.decorator.BoldDecorator.decorate(BoldDecorator.java:79)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui 4 4 2024-12-30 09:13:14.765
+!MESSAGE Exception in Decorator. The 'linkerDecorator' decorator will be disabled.
+!SUBENTRY 1 org.eclipse.ui 4 4 2024-12-30 09:13:14.765
+!MESSAGE Cannot invoke "org.eclipse.cdt.managedbuilder.core.IManagedBuildInfo.getDefaultConfiguration()" because "buildInfo" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.cdt.managedbuilder.core.IManagedBuildInfo.getDefaultConfiguration()" because "buildInfo" is null
+	at com.st.stm32cube.ide.mcu.build.ui.decorator.BoldDecorator.decorate(BoldDecorator.java:79)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 77 2024-12-30 09:13:18.241
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-12-30 09:13:18.241
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-12-30 09:13:18.241
+!MESSAGE C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj overlaps the location of another project: 'STM32Proj'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-12-30 09:13:18.241
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.ui 4 4 2024-12-30 09:13:18.266
+!MESSAGE Unable to create part
+!STACK 1
+org.eclipse.ui.PartInitException: Invalid Input: Must be project's active .ioc file.
+
+Project's 'STM32Proj' active one is 'STM32Proj.ioc' file
+	at com.st.stm32cube.common.mx.editor.CubeMxEditor.init(CubeMxEditor.java:855)
+	at org.eclipse.ui.internal.EditorReference.initialize(EditorReference.java:353)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:344)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:976)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:938)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:138)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:385)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:311)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:203)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:995)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.lambda$0(PartServiceImpl.java:105)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4802)
+	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:208)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:206)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElementGen(ElementContainerImpl.java:170)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:188)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:661)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:625)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:796)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.bringToTop(PartServiceImpl.java:401)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1270)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3233)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$11(WorkbenchPage.java:3123)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3121)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3091)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3082)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:548)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:508)
+	at org.eclipse.ui.actions.OpenFileAction.openFile(OpenFileAction.java:103)
+	at org.eclipse.ui.actions.OpenSystemEditorAction.run(OpenSystemEditorAction.java:96)
+	at org.eclipse.ui.actions.RetargetAction.run(RetargetAction.java:215)
+	at org.eclipse.ui.navigator.CommonNavigatorManager$1.open(CommonNavigatorManager.java:184)
+	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:48)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:800)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:797)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1115)
+	at org.eclipse.ui.navigator.CommonViewer.handleOpen(CommonViewer.java:452)
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:296)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:331)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4071)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+!SUBENTRY 1 org.eclipse.ui 4 0 2024-12-30 09:13:18.267
+!MESSAGE Invalid Input: Must be project's active .ioc file.
+
+Project's 'STM32Proj' active one is 'STM32Proj.ioc' file
+
+!ENTRY org.eclipse.core.resources 4 77 2024-12-30 09:13:38.345
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-12-30 09:13:38.346
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-12-30 09:13:38.346
+!MESSAGE C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj overlaps the location of another project: 'STM32Proj'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-12-30 09:13:38.346
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-12-30 09:13:43.276
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-12-30 09:13:43.276
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-12-30 09:13:43.276
+!MESSAGE C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj overlaps the location of another project: 'STM32Proj'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-12-30 09:13:43.276
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.ui 4 4 2024-12-30 09:13:43.276
+!MESSAGE Unable to create part
+!STACK 1
+org.eclipse.ui.PartInitException: Invalid Input: Must be project's active .ioc file.
+
+Project's 'STM32Proj' active one is 'STM32Proj.ioc' file
+	at com.st.stm32cube.common.mx.editor.CubeMxEditor.init(CubeMxEditor.java:855)
+	at org.eclipse.ui.internal.EditorReference.initialize(EditorReference.java:353)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:344)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:976)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:938)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:138)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:385)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:311)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:203)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:995)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.lambda$0(PartServiceImpl.java:105)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4802)
+	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:208)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:206)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElementGen(ElementContainerImpl.java:170)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:188)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:661)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:625)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:796)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.bringToTop(PartServiceImpl.java:401)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1270)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3233)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$11(WorkbenchPage.java:3123)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3121)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3091)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3082)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:548)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:508)
+	at org.eclipse.ui.actions.OpenFileAction.openFile(OpenFileAction.java:103)
+	at org.eclipse.ui.actions.OpenSystemEditorAction.run(OpenSystemEditorAction.java:96)
+	at org.eclipse.ui.actions.RetargetAction.run(RetargetAction.java:215)
+	at org.eclipse.ui.navigator.CommonNavigatorManager$1.open(CommonNavigatorManager.java:184)
+	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:48)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:800)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:797)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1115)
+	at org.eclipse.ui.navigator.CommonViewer.handleOpen(CommonViewer.java:452)
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:296)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:331)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4071)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+!SUBENTRY 1 org.eclipse.ui 4 0 2024-12-30 09:13:43.276
+!MESSAGE Invalid Input: Must be project's active .ioc file.
+
+Project's 'STM32Proj' active one is 'STM32Proj.ioc' file
+
+!ENTRY org.eclipse.core.resources 4 77 2024-12-30 09:13:49.622
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-12-30 09:13:49.622
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-12-30 09:13:49.622
+!MESSAGE C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj overlaps the location of another project: 'STM32Proj'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-12-30 09:13:49.623
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-12-30 09:15:33.595
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-12-30 09:15:33.595
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-12-30 09:15:33.595
+!MESSAGE C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj overlaps the location of another project: 'STM32Proj'
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-12-30 09:19:36.556
+!MESSAGE Indexed 'a' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-12-30 09:19:38.897
+!MESSAGE Indexed 'a' (18 sources, 79 headers) in 1.19 sec: 4,135 declarations; 17,900 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0091%)
+
+!ENTRY org.eclipse.core.resources 4 77 2024-12-30 09:21:11.594
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-12-30 09:21:11.594
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-12-30 09:21:11.594
+!MESSAGE C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj overlaps the location of another project: 'STM32Proj'
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 09:22:16.711
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY org.eclipse.core.resources 4 77 2024-12-30 09:46:16.989
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-12-30 09:46:16.989
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-12-30 09:46:16.989
+!MESSAGE C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj overlaps the location of another project: 'STM32Proj'
+
+!ENTRY org.eclipse.core.resources 4 77 2024-12-30 09:46:38.377
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-12-30 09:46:38.377
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-12-30 09:46:38.377
+!MESSAGE C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj overlaps the location of another project: 'STM32Proj'
+
+!ENTRY org.eclipse.core.resources 4 77 2024-12-30 12:45:38.520
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-12-30 12:45:38.520
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-12-30 12:45:38.520
+!MESSAGE C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj overlaps the location of another project: 'STM32Proj'
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 13:07:45.993
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 13:09:53.873
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 13:14:47.846
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY org.eclipse.core.resources 4 77 2024-12-30 13:24:58.068
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-12-30 13:24:58.068
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-12-30 13:24:58.068
+!MESSAGE C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj overlaps the location of another project: 'STM32Proj'
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 13:33:00.579
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 13:39:46.814
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY org.eclipse.core.resources 4 77 2024-12-30 13:48:41.657
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-12-30 13:48:41.657
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-12-30 13:48:41.657
+!MESSAGE C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj overlaps the location of another project: 'STM32Proj'
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 13:53:18.294
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY org.eclipse.core.resources 4 77 2024-12-30 13:54:33.946
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-12-30 13:54:33.946
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-12-30 13:54:33.946
+!MESSAGE C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj overlaps the location of another project: 'STM32Proj'
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 13:54:49.109
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY org.eclipse.core.resources 4 77 2024-12-30 14:16:58.979
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-12-30 14:16:58.979
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-12-30 14:16:58.979
+!MESSAGE C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj overlaps the location of another project: 'STM32Proj'
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 14:22:27.623
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 14:29:11.658
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+!SESSION 2024-12-30 16:04:51.226 -----------------------------------------------
+eclipse.buildId=Version 1.17.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-12-30 16:05:04.452
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-12-30 16:05:04.453
+!MESSAGE Log4j2 initialized with config file C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-12-30 16:05:09.577
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.ui.workbench 4 2 2024-12-30 16:06:23.788
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.cdt.managedbuilder.core.IManagedBuildInfo.getDefaultConfiguration()" because "buildInfo" is null
+	at com.st.stm32cube.ide.mcu.build.ui.decorator.BoldDecorator.decorate(BoldDecorator.java:79)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui 4 4 2024-12-30 16:06:23.789
+!MESSAGE Exception in Decorator. The 'linkerDecorator' decorator will be disabled.
+!SUBENTRY 1 org.eclipse.ui 4 4 2024-12-30 16:06:23.789
+!MESSAGE Cannot invoke "org.eclipse.cdt.managedbuilder.core.IManagedBuildInfo.getDefaultConfiguration()" because "buildInfo" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.cdt.managedbuilder.core.IManagedBuildInfo.getDefaultConfiguration()" because "buildInfo" is null
+	at com.st.stm32cube.ide.mcu.build.ui.decorator.BoldDecorator.decorate(BoldDecorator.java:79)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 16:14:04.086
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 16:14:50.645
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 16:35:45.007
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 16:41:54.389
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 16:45:02.779
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 16:59:42.325
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY org.eclipse.core.resources 4 77 2024-12-30 17:07:58.090
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-12-30 17:07:58.090
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-12-30 17:07:58.090
+!MESSAGE C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj overlaps the location of another project: 'STM32Proj'
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 17:08:13.245
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 17:08:55.305
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY org.eclipse.core.resources 4 77 2024-12-30 17:13:35.257
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-12-30 17:13:35.257
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-12-30 17:13:35.257
+!MESSAGE C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj overlaps the location of another project: 'STM32Proj'
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 17:15:25.747
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY org.eclipse.core.resources 4 77 2024-12-30 17:15:56.632
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-12-30 17:15:56.632
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-12-30 17:15:56.632
+!MESSAGE C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj overlaps the location of another project: 'STM32Proj'
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 17:16:11.660
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 17:27:54.806
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 17:46:07.650
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 17:48:42.804
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 17:49:57.916
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 18:12:09.194
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 18:15:02.368
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 18:27:46.573
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 18:33:59.776
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 18:37:36.292
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 18:48:48.985
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 18:54:45.594
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 18:55:15.828
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY org.eclipse.core.resources 4 77 2024-12-30 19:02:57.482
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-12-30 19:02:57.482
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-12-30 19:02:57.482
+!MESSAGE C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj overlaps the location of another project: 'STM32Proj'
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 19:03:13.749
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 19:09:31.223
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY org.eclipse.core.resources 4 77 2024-12-30 19:11:04.553
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-12-30 19:11:04.553
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-12-30 19:11:04.553
+!MESSAGE C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj overlaps the location of another project: 'STM32Proj'
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 19:11:17.362
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 19:14:11.009
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY org.eclipse.core.resources 4 77 2024-12-30 19:17:40.696
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-12-30 19:17:40.696
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-12-30 19:17:40.696
+!MESSAGE C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj overlaps the location of another project: 'STM32Proj'
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-30 19:18:21.791
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36

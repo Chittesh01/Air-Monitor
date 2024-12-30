@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;STM32Proj/001SensorTesting.ioc&apos; to &apos;STM32Proj.ioc&apos;" description="Rename resource &apos;001SensorTesting.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="001SensorTesting.ioc" name="STM32Proj.ioc" stamp="1735503240891" updateReferences="true"/>
+</session>

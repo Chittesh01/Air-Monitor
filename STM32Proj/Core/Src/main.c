@@ -40,27 +40,34 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
+SPI_HandleTypeDef hspi2;
+DMA_HandleTypeDef hdma_spi2_tx;
+
 TIM_HandleTypeDef htim1;
 
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
-
+float data[3];
+uint8_t buffer[sizeof(data)];
+uint8_t buffer1[sizeof(data)];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
+static void MX_DMA_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_TIM1_Init(void);
+static void MX_SPI2_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
-/* USER CODE BEGIN 0 */					//https://www.micropeta.com/video48
+/* USER CODE BEGIN 0 */
 #define DHT22_PORT GPIOB
-#define DHT22_PIN GPIO_PIN_5
+#define DHT22_PIN GPIO_PIN_4
 uint8_t RH1, RH2, TC1, TC2, SUM, CHECK;
 uint32_t pMillis, cMillis;
 float tCelsius = 0;
@@ -158,13 +165,43 @@ int main(void)
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
+
+
+  GPIO_InitTypeDef GPIO_InitStruct = {0};
+
+  // SCK Pin
+  GPIO_InitStruct.Pin = GPIO_PIN_13;
+  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;  // Alternate Function, Push-Pull
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;  // High Speed for SPI
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+  // MOSI Pin
+  GPIO_InitStruct.Pin = GPIO_PIN_15;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+  // MISO Pin (optional, if using bi-directional data)
+  GPIO_InitStruct.Pin = GPIO_PIN_14;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+  // NSS Pin
+  GPIO_InitStruct.Pin = GPIO_PIN_12;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+  __HAL_RCC_SPI2_CLK_ENABLE();
+
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_USART2_UART_Init();
   MX_TIM1_Init();
+  MX_SPI2_Init();
   /* USER CODE BEGIN 2 */
+
+
   HAL_TIM_Base_Start(&htim1);
 
   RCC->APB2ENR |= RCC_APB2ENR_IOPAEN;
+  RCC->APB1ENR |= RCC_APB1ENR_SPI2EN;
 
   //GPIOA->CRL &= ~GPIO_CRL_MODE5; // Clear mode bits
   //GPIOA->CRL |= GPIO_CRL_MODE5_1; // Set to output 2 MHz //Already set by MX_GPIO_Init();
@@ -172,6 +209,13 @@ int main(void)
 
   GPIOA->BSRR = GPIO_BSRR_BS5; // LED ON (Set PA5)
   GPIOA->BSRR = GPIO_BSRR_BR5; // LED OFF (Reset PA5)
+
+  char userdata[] = "Hello World";
+
+  HAL_SPI_Transmit(&hspi2, userdata, strlen(userdata), HAL_MAX_DELAY);
+
+  SPI2->CR1 &= ~SPI_CR1_SPE;  // Disable SPI2
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -200,6 +244,16 @@ int main(void)
 	  printf("Temperature: %2.1f degC\n", tCelsius);
 	  printf("Temperature: %2.1f degF\n", tFahrenheit);
 	  printf("Humidity: %2.1f%%\n\n", RH);
+	  data[0] = tCelsius; data[1] = tFahrenheit; data[2] = RH;
+	  memcpy(buffer, data, sizeof(data));
+	  //if (HAL_SPI_TransmitReceive(&hspi2, buffer, buffer1, sizeof(buffer), HAL_MAX_DELAY) != HAL_OK) {
+		 // printf("failes\n");
+		//  while(1){}
+	  //}
+
+	  char strOut[30];
+	  sprintf(strOut, "SPI: Received %02X - %02X", buffer1[0], buffer1[1]);
+	  printf(strOut);
 	  HAL_Delay(1000);
     /* USER CODE END WHILE */
 
@@ -245,6 +299,45 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
+}
+
+/**
+  * @brief SPI2 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_SPI2_Init(void)
+{
+
+  /* USER CODE BEGIN SPI2_Init 0 */
+
+  /* USER CODE END SPI2_Init 0 */
+
+  /* USER CODE BEGIN SPI2_Init 1 */
+
+  /* USER CODE END SPI2_Init 1 */
+  /* SPI2 parameter configuration*/
+  hspi2.Instance = SPI2;
+  hspi2.Init.Mode = SPI_MODE_MASTER;
+  hspi2.Init.Direction = SPI_DIRECTION_2LINES;
+  hspi2.Init.DataSize = SPI_DATASIZE_8BIT;
+  hspi2.Init.CLKPolarity = SPI_POLARITY_LOW;
+  hspi2.Init.CLKPhase = SPI_PHASE_1EDGE;
+  hspi2.Init.NSS = SPI_NSS_HARD_OUTPUT;
+  hspi2.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_16;
+  hspi2.Init.FirstBit = SPI_FIRSTBIT_MSB;
+  hspi2.Init.TIMode = SPI_TIMODE_DISABLE;
+  hspi2.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
+  hspi2.Init.CRCPolynomial = 10;
+  if (HAL_SPI_Init(&hspi2) != HAL_OK)
+  {
+    Error_Handler();
+    while(1){}
+  }
+  /* USER CODE BEGIN SPI2_Init 2 */
+
+  /* USER CODE END SPI2_Init 2 */
+
 }
 
 /**
@@ -327,6 +420,22 @@ static void MX_USART2_UART_Init(void)
 }
 
 /**
+  * Enable DMA controller clock
+  */
+static void MX_DMA_Init(void)
+{
+
+  /* DMA controller clock enable */
+  __HAL_RCC_DMA1_CLK_ENABLE();
+
+  /* DMA interrupt init */
+  /* DMA1_Channel5_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA1_Channel5_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA1_Channel5_IRQn);
+
+}
+
+/**
   * @brief GPIO Initialization Function
   * @param None
   * @retval None
@@ -347,7 +456,7 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : B1_Pin */
   GPIO_InitStruct.Pin = B1_Pin;
@@ -362,8 +471,8 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(LD2_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : PB5 */
-  GPIO_InitStruct.Pin = GPIO_PIN_5;
+  /*Configure GPIO pin : PB4 */
+  GPIO_InitStruct.Pin = GPIO_PIN_4;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
