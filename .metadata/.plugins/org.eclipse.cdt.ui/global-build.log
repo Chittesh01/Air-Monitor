@@ -2575,3 +2575,10 @@ Finished building: default.size.stdout
  
 Finished building: STM32Proj.list
  
+06:48:07 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-size  STM32Proj.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27124	    468	   2260	  29852	   749c	STM32Proj.elf
+Finished building: default.size.stdout
+ 

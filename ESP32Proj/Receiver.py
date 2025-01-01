@@ -1,6 +1,18 @@
 from bleak import BleakClient
+from flask import Flask, render_template
+from flask_socketio import SocketIO
+import threading
+import asyncio
 import struct
 import msvcrt
+
+app = Flask(__name__)
+socketio = SocketIO(app, async_mode='threading')
+values = []
+
+@app.route('/')
+def index():
+    return "Refer to Client.py"
 
 # Define the ESP32 address and characteristic UUID
 address = "CC:DB:A7:9B:5D:76"  # MAC address of ESP32_BLE
@@ -12,12 +24,14 @@ async def on_data_received(sender: int, value: bytearray):
     print(f"Temperature: {values[1]:.1f} °F")
     print(f"Humidity: {values[2]:.1f}%\n")
 
+    socketio.emit('update', {'values': values})
+
 async def main():
     async with BleakClient(address) as client:
         # Subscribe to notifications for the characteristic
         await client.start_notify(characteristic_uuid, on_data_received)
 
-        while(1):
+        while True:
             # Read the characteristic value
             await client.read_gatt_char(characteristic_uuid)
 
@@ -32,5 +46,10 @@ async def main():
         # Stop notifications after done
         await client.stop_notify(characteristic_uuid)
 
-import asyncio
-asyncio.run(main())
+def run_socketio():
+   socketio.run(app, host="127.0.0.1", port=12000)
+
+if __name__ == "__main__":
+    #thread = threading.Thread(target=run_flask, daemon=True).start();
+    threading.Thread(target=run_socketio, daemon=True).start()
+    asyncio.run(main())

@@ -54,20 +54,11 @@ void setup() {
       .sclk_io_num = SCK,
   };
 
-  //  No need to setup device as slave synchronizes according to SCLK
-  // spi_device_interface_config_t spi_stm32_confg = {
-  //     .mode = 0,
-  //     .duty_cycle_pos = 128,
-  //     .clock_speed_hz = // prescaler of ESP32 can be set from 2 to 65536,
-  //         2250000,      // allowing for flexible clock frequencies
-  //     .queue_size = 1};
-
   spi_slave_interface_config_t spi_slave_confg = {
       .spics_io_num = SS, .queue_size = 1, .mode = 0};
 
   spi_slave_initialize(SPI2_HOST, &spi_slave_config, &spi_slave_confg,
                        SPI_DMA_DISABLED);
-  // spi_bus_add_device(SPI2_HOST, &spi_stm32_confg, &handle);
 
   memset(&t, 0, sizeof(t));
   t.length = sizeof(recvbuf) * 8;
