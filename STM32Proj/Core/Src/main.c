@@ -50,6 +50,7 @@ UART_HandleTypeDef huart2;
 /* USER CODE BEGIN PV */
 float data[3];
 uint8_t buffer[sizeof(data)];
+uint8_t buffer1;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -164,9 +165,6 @@ int main(void)
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
-
-  __HAL_RCC_SPI2_CLK_ENABLE();
-
   MX_GPIO_Init();
   MX_DMA_Init();
   MX_USART2_UART_Init();
@@ -215,9 +213,8 @@ int main(void)
 	  data[0] = tCelsius; data[1] = tFahrenheit; data[2] = RH;
 	  memcpy(buffer, data, sizeof(data));
 
-	  //SPI2->CR1 &= SPI_CR1_SPE;  // Enable SPI2
-
 	  char string[] = "Hello World";
+
 	  HAL_SPI_Transmit(&hspi2, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
 
 	  SPI2->CR1 &= ~SPI_CR1_SPE;  // Disable SPI2
@@ -287,12 +284,12 @@ static void MX_SPI2_Init(void)
   /* SPI2 parameter configuration*/
   hspi2.Instance = SPI2;
   hspi2.Init.Mode = SPI_MODE_MASTER;
-  hspi2.Init.Direction = SPI_DIRECTION_2LINES;
+  hspi2.Init.Direction = SPI_DIRECTION_1LINE;
   hspi2.Init.DataSize = SPI_DATASIZE_8BIT;
   hspi2.Init.CLKPolarity = SPI_POLARITY_LOW;
   hspi2.Init.CLKPhase = SPI_PHASE_1EDGE;
   hspi2.Init.NSS = SPI_NSS_HARD_OUTPUT;
-  hspi2.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_128;
+  hspi2.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_16;
   hspi2.Init.FirstBit = SPI_FIRSTBIT_MSB;
   hspi2.Init.TIMode = SPI_TIMODE_DISABLE;
   hspi2.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
@@ -300,7 +297,6 @@ static void MX_SPI2_Init(void)
   if (HAL_SPI_Init(&hspi2) != HAL_OK)
   {
     Error_Handler();
-    while(1){}
   }
   /* USER CODE BEGIN SPI2_Init 2 */
 
@@ -450,7 +446,7 @@ static void MX_GPIO_Init(void)
   HAL_NVIC_SetPriority(EXTI15_10_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
 
-/* USER CODE BEGIN MX_GPIO_Init_2 */	//SPI GPIO Initialisation
+/* USER CODE BEGIN MX_GPIO_Init_2 */
 
   // SCK Pin
   GPIO_InitStruct.Pin = GPIO_PIN_13;
@@ -469,6 +465,7 @@ static void MX_GPIO_Init(void)
 
   // NSS Pin
   GPIO_InitStruct.Pin = GPIO_PIN_12;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 /* USER CODE END MX_GPIO_Init_2 */
 }

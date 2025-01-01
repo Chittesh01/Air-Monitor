@@ -1,10 +1,46 @@
-14:38:46 **** Incremental Build of configuration Debug for project STM32Proj ****
+16:20:19 **** Incremental Build of configuration Debug for project STM32Proj ****
 make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:210:11: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  210 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:210:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  210 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:210:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:214:11: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  214 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:214:11: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  214 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:214:11: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c:218:54: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  218 |           HAL_SPI_Transmit(&hspi2, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
+      |                                                      ^~~~~~
+../Core/Src/main.c:218:54: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:218:54: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:218:54: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM32Proj.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Proj.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Proj.elf
+ 
 arm-none-eabi-size  STM32Proj.elf 
+arm-none-eabi-objdump -h -S STM32Proj.elf  > "STM32Proj.list"
    text	   data	    bss	    dec	    hex	filename
-  27172	    468	   2260	  29900	   74cc	STM32Proj.elf
+  27156	    468	   2260	  29884	   74bc	STM32Proj.elf
 Finished building: default.size.stdout
  
+Finished building: STM32Proj.list
+ 
 
-14:38:47 Build Finished. 0 errors, 0 warnings. (took 384ms)
+16:20:20 Build Finished. 0 errors, 6 warnings. (took 597ms)
 

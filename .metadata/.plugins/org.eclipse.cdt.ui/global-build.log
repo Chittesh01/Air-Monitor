@@ -1022,3 +1022,1498 @@ arm-none-eabi-size  STM32Proj.elf
   27172	    468	   2260	  29900	   74cc	STM32Proj.elf
 Finished building: default.size.stdout
  
+17:40:49 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-size  STM32Proj.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27172	    468	   2260	  29900	   74cc	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+17:43:50 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:212:11: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  212 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:212:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  212 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:212:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:216:11: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  216 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:216:11: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  216 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:216:11: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c:221:54: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  221 |           HAL_SPI_Transmit(&hspi2, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
+      |                                                      ^~~~~~
+../Core/Src/main.c:221:54: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:221:54: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:221:54: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM32Proj.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Proj.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Proj.elf
+ 
+arm-none-eabi-size  STM32Proj.elf 
+arm-none-eabi-objdump -h -S STM32Proj.elf  > "STM32Proj.list"
+   text	   data	    bss	    dec	    hex	filename
+  27180	    468	   2260	  29908	   74d4	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Proj.list
+ 
+17:44:16 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-size  STM32Proj.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27180	    468	   2260	  29908	   74d4	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+17:57:07 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:212:11: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  212 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:212:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  212 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:212:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:216:11: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  216 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:216:11: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  216 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:216:11: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c:221:54: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  221 |           HAL_SPI_Transmit(&hspi2, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
+      |                                                      ^~~~~~
+../Core/Src/main.c:221:54: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:221:54: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:221:54: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM32Proj.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Proj.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Proj.elf
+ 
+arm-none-eabi-size  STM32Proj.elf 
+arm-none-eabi-objdump -h -S STM32Proj.elf  > "STM32Proj.list"
+   text	   data	    bss	    dec	    hex	filename
+  27180	    468	   2260	  29908	   74d4	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Proj.list
+ 
+18:00:13 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:212:11: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  212 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:212:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  212 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:212:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:216:11: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  216 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:216:11: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  216 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:216:11: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c:221:54: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  221 |           HAL_SPI_Transmit(&hspi2, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
+      |                                                      ^~~~~~
+../Core/Src/main.c:221:54: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:221:54: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:221:54: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM32Proj.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Proj.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Proj.elf
+ 
+arm-none-eabi-size  STM32Proj.elf 
+arm-none-eabi-objdump -h -S STM32Proj.elf  > "STM32Proj.list"
+   text	   data	    bss	    dec	    hex	filename
+  27180	    468	   2260	  29908	   74d4	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Proj.list
+ 
+18:02:22 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-size  STM32Proj.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27180	    468	   2260	  29908	   74d4	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+18:06:33 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:212:11: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  212 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:212:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  212 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:212:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:216:11: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  216 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:216:11: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  216 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:216:11: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c:221:54: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  221 |           HAL_SPI_Transmit(&hspi2, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
+      |                                                      ^~~~~~
+../Core/Src/main.c:221:54: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:221:54: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:221:54: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM32Proj.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Proj.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Proj.elf
+ 
+arm-none-eabi-size  STM32Proj.elf 
+arm-none-eabi-objdump -h -S STM32Proj.elf  > "STM32Proj.list"
+   text	   data	    bss	    dec	    hex	filename
+  27172	    468	   2260	  29900	   74cc	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Proj.list
+ 
+18:16:08 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-size  STM32Proj.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27172	    468	   2260	  29900	   74cc	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+18:20:12 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:212:11: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  212 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:212:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  212 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:212:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:216:11: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  216 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:216:11: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  216 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:216:11: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c:221:54: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  221 |           HAL_SPI_Transmit(&hspi2, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
+      |                                                      ^~~~~~
+../Core/Src/main.c:221:54: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:221:54: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:221:54: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM32Proj.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Proj.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Proj.elf
+ 
+arm-none-eabi-size  STM32Proj.elf 
+arm-none-eabi-objdump -h -S STM32Proj.elf  > "STM32Proj.list"
+   text	   data	    bss	    dec	    hex	filename
+  27164	    468	   2260	  29892	   74c4	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Proj.list
+ 
+18:34:27 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:212:11: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  212 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:212:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  212 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:212:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:216:11: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  216 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:216:11: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  216 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:216:11: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c:221:54: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  221 |           HAL_SPI_Transmit(&hspi2, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
+      |                                                      ^~~~~~
+../Core/Src/main.c:221:54: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:221:54: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:221:54: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM32Proj.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Proj.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Proj.elf
+ 
+arm-none-eabi-size  STM32Proj.elf 
+arm-none-eabi-objdump -h -S STM32Proj.elf  > "STM32Proj.list"
+   text	   data	    bss	    dec	    hex	filename
+  27196	    468	   2260	  29924	   74e4	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Proj.list
+ 
+18:35:19 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-size  STM32Proj.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27196	    468	   2260	  29924	   74e4	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+18:46:31 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:212:11: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  212 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:212:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  212 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:212:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:216:11: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  216 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:216:11: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  216 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:216:11: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c:221:54: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  221 |           HAL_SPI_Transmit(&hspi2, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
+      |                                                      ^~~~~~
+../Core/Src/main.c:221:54: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:221:54: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:221:54: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM32Proj.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Proj.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Proj.elf
+ 
+arm-none-eabi-size  STM32Proj.elf 
+arm-none-eabi-objdump -h -S STM32Proj.elf  > "STM32Proj.list"
+   text	   data	    bss	    dec	    hex	filename
+  27172	    468	   2260	  29900	   74cc	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Proj.list
+ 
+19:01:56 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:213:11: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  213 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:213:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  213 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:213:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:217:11: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  217 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:217:11: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  217 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:217:11: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c:224:23: warning: comparison between pointer and integer
+  224 |           if (buffer1 == 0b1) {
+      |                       ^~
+../Core/Src/main.c:225:62: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  225 |                   HAL_SPI_Transmit(&hspi2, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
+      |                                                              ^~~~~~
+../Core/Src/main.c:225:62: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:225:62: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:225:62: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM32Proj.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Proj.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Proj.elf
+ 
+arm-none-eabi-size  STM32Proj.elf 
+arm-none-eabi-objdump -h -S STM32Proj.elf  > "STM32Proj.list"
+   text	   data	    bss	    dec	    hex	filename
+  28796	    468	   2260	  31524	   7b24	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Proj.list
+ 
+19:10:24 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-size  STM32Proj.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28796	    468	   2260	  31524	   7b24	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+19:11:17 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:213:11: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  213 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:213:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  213 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:213:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:217:11: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  217 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:217:11: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  217 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:217:11: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c:223:35: warning: passing argument 2 of 'HAL_SPI_Receive' makes pointer from integer without a cast [-Wint-conversion]
+  223 |           HAL_SPI_Receive(&hspi2, buffer1, 1, HAL_MAX_DELAY);
+      |                                   ^~~~~~~
+      |                                   |
+      |                                   uint8_t {aka unsigned char}
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:330,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h:676:69: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'unsigned char'}
+  676 | HAL_StatusTypeDef HAL_SPI_Receive(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                            ~~~~~~~~~^~~~~
+../Core/Src/main.c:225:62: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  225 |                   HAL_SPI_Transmit(&hspi2, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
+      |                                                              ^~~~~~
+../Core/Src/main.c:225:62: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:225:62: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:225:62: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM32Proj.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Proj.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Proj.elf
+ 
+arm-none-eabi-size  STM32Proj.elf 
+arm-none-eabi-objdump -h -S STM32Proj.elf  > "STM32Proj.list"
+   text	   data	    bss	    dec	    hex	filename
+  28804	    468	   2260	  31532	   7b2c	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Proj.list
+ 
+19:12:34 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:213:11: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  213 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:213:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  213 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:213:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:217:11: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  217 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:217:11: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  217 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:217:11: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c:225:62: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  225 |                   HAL_SPI_Transmit(&hspi2, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
+      |                                                              ^~~~~~
+../Core/Src/main.c:225:62: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:225:62: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:225:62: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM32Proj.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Proj.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Proj.elf
+ 
+arm-none-eabi-size  STM32Proj.elf 
+arm-none-eabi-objdump -h -S STM32Proj.elf  > "STM32Proj.list"
+   text	   data	    bss	    dec	    hex	filename
+  28804	    468	   2260	  31532	   7b2c	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Proj.list
+ 
+19:22:37 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-size  STM32Proj.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28804	    468	   2260	  31532	   7b2c	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+19:26:31 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:213:11: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  213 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:213:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  213 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:213:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:217:11: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  217 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:217:11: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  217 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:217:11: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c:225:62: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  225 |                   HAL_SPI_Transmit(&hspi2, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
+      |                                                              ^~~~~~
+../Core/Src/main.c:225:62: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:225:62: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:225:62: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM32Proj.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Proj.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Proj.elf
+ 
+arm-none-eabi-size  STM32Proj.elf 
+arm-none-eabi-objdump -h -S STM32Proj.elf  > "STM32Proj.list"
+   text	   data	    bss	    dec	    hex	filename
+  28724	    468	   2260	  31452	   7adc	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Proj.list
+ 
+19:26:51 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-size  STM32Proj.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28724	    468	   2260	  31452	   7adc	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+19:35:12 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:213:11: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  213 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:213:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  213 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:213:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:217:11: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  217 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:217:11: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  217 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:217:11: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c:224:54: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  224 |           HAL_SPI_Transmit(&hspi2, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
+      |                                                      ^~~~~~
+../Core/Src/main.c:224:54: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:224:54: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:224:54: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM32Proj.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Proj.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Proj.elf
+ 
+arm-none-eabi-size  STM32Proj.elf 
+arm-none-eabi-objdump -h -S STM32Proj.elf  > "STM32Proj.list"
+   text	   data	    bss	    dec	    hex	filename
+  27116	    468	   2260	  29844	   7494	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Proj.list
+ 
+19:35:55 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:213:11: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  213 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:213:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  213 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:213:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:217:11: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  217 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:217:11: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  217 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:217:11: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c:224:54: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  224 |           HAL_SPI_Transmit(&hspi2, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
+      |                                                      ^~~~~~
+../Core/Src/main.c:224:54: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:224:54: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:224:54: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM32Proj.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Proj.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Proj.elf
+ 
+arm-none-eabi-size  STM32Proj.elf 
+arm-none-eabi-objdump -h -S STM32Proj.elf  > "STM32Proj.list"
+   text	   data	    bss	    dec	    hex	filename
+  27196	    468	   2260	  29924	   74e4	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Proj.list
+ 
+20:04:09 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:213:11: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  213 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:213:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  213 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:213:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:217:11: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  217 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:217:11: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  217 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:217:11: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c:224:54: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  224 |           HAL_SPI_Transmit(&hspi2, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
+      |                                                      ^~~~~~
+../Core/Src/main.c:224:54: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:224:54: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:224:54: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM32Proj.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Proj.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Proj.elf
+ 
+arm-none-eabi-size  STM32Proj.elf 
+arm-none-eabi-objdump -h -S STM32Proj.elf  > "STM32Proj.list"
+   text	   data	    bss	    dec	    hex	filename
+  27196	    468	   2260	  29924	   74e4	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Proj.list
+ 
+20:20:57 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:213:11: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  213 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:213:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  213 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:213:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:217:11: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  217 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:217:11: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  217 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:217:11: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c:224:54: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  224 |           HAL_SPI_Transmit(&hspi2, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
+      |                                                      ^~~~~~
+../Core/Src/main.c:224:54: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:224:54: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:224:54: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM32Proj.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Proj.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Proj.elf
+ 
+arm-none-eabi-size  STM32Proj.elf 
+arm-none-eabi-objdump -h -S STM32Proj.elf  > "STM32Proj.list"
+   text	   data	    bss	    dec	    hex	filename
+  27196	    468	   2260	  29924	   74e4	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Proj.list
+ 
+20:47:25 **** Clean-only build of configuration Debug for project STM32Proj ****
+make -j20 clean 
+rm -rf ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.su
+rm -rf ./Core/Startup/startup_stm32f103rbtx.d ./Core/Startup/startup_stm32f103rbtx.o
+rm -rf ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32f1xx_hal_msp.cyclo ./Core/Src/stm32f1xx_hal_msp.d ./Core/Src/stm32f1xx_hal_msp.o ./Core/Src/stm32f1xx_hal_msp.su ./Core/Src/stm32f1xx_it.cyclo ./Core/Src/stm32f1xx_it.d ./Core/Src/stm32f1xx_it.o ./Core/Src/stm32f1xx_it.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32f1xx.cyclo ./Core/Src/system_stm32f1xx.d ./Core/Src/system_stm32f1xx.o ./Core/Src/system_stm32f1xx.su
+rm -rf STM32Proj.elf STM32Proj.list STM32Proj.map default.size.stdout
+rm: can't remove 'STM32Proj.elf': Permission denied
+make: [makefile:80: clean] Error 1 (ignored)
+ 
+20:47:26 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o"
+arm-none-eabi-gcc -mcpu=cortex-m3 -g -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f103rbtx.d" -MT"Core/Startup/startup_stm32f103rbtx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Startup/startup_stm32f103rbtx.o" "../Core/Startup/startup_stm32f103rbtx.s"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sysmem.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:210:11: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  210 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:210:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  210 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:210:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:214:11: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  214 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:214:11: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  214 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:214:11: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c:221:54: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  221 |           HAL_SPI_Transmit(&hspi2, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
+      |                                                      ^~~~~~
+../Core/Src/main.c:221:54: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:221:54: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:221:54: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc "../Core/Src/system_stm32f1xx.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f1xx.d" -MT"Core/Src/system_stm32f1xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32f1xx.o"
+arm-none-eabi-gcc -o "STM32Proj.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Proj.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Proj.elf
+ 
+arm-none-eabi-size  STM32Proj.elf 
+arm-none-eabi-objdump -h -S STM32Proj.elf  > "STM32Proj.list"
+   text	   data	    bss	    dec	    hex	filename
+  27148	    468	   2260	  29876	   74b4	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Proj.list
+ 
+20:48:35 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-size  STM32Proj.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27148	    468	   2260	  29876	   74b4	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+20:51:42 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-size  STM32Proj.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27148	    468	   2260	  29876	   74b4	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+21:00:23 **** Clean-only build of configuration Debug for project STM32Proj ****
+make -j20 clean 
+rm -rf ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.su
+rm -rf ./Core/Startup/startup_stm32f103rbtx.d ./Core/Startup/startup_stm32f103rbtx.o
+rm -rf ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32f1xx_hal_msp.cyclo ./Core/Src/stm32f1xx_hal_msp.d ./Core/Src/stm32f1xx_hal_msp.o ./Core/Src/stm32f1xx_hal_msp.su ./Core/Src/stm32f1xx_it.cyclo ./Core/Src/stm32f1xx_it.d ./Core/Src/stm32f1xx_it.o ./Core/Src/stm32f1xx_it.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32f1xx.cyclo ./Core/Src/system_stm32f1xx.d ./Core/Src/system_stm32f1xx.o ./Core/Src/system_stm32f1xx.su
+rm -rf STM32Proj.elf STM32Proj.list STM32Proj.map default.size.stdout
+rm: can't remove 'STM32Proj.elf': Permission denied
+make: [makefile:80: clean] Error 1 (ignored)
+ 
+21:00:23 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o"
+arm-none-eabi-gcc -mcpu=cortex-m3 -g -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f103rbtx.d" -MT"Core/Startup/startup_stm32f103rbtx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Startup/startup_stm32f103rbtx.o" "../Core/Startup/startup_stm32f103rbtx.s"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sysmem.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:210:11: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  210 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:210:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  210 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:210:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:214:11: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  214 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:214:11: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  214 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:214:11: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c:221:54: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  221 |           HAL_SPI_Transmit(&hspi2, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
+      |                                                      ^~~~~~
+../Core/Src/main.c:221:54: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:221:54: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:221:54: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc "../Core/Src/system_stm32f1xx.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f1xx.d" -MT"Core/Src/system_stm32f1xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32f1xx.o"
+arm-none-eabi-gcc -o "STM32Proj.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Proj.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Proj.elf
+ 
+arm-none-eabi-size  STM32Proj.elf 
+arm-none-eabi-objdump -h -S STM32Proj.elf  > "STM32Proj.list"
+   text	   data	    bss	    dec	    hex	filename
+  27148	    468	   2260	  29876	   74b4	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Proj.list
+ 
+21:00:40 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-size  STM32Proj.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27148	    468	   2260	  29876	   74b4	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+21:02:25 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-size  STM32Proj.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27148	    468	   2260	  29876	   74b4	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+21:11:49 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:210:11: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  210 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:210:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  210 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:210:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:214:11: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  214 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:214:11: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  214 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:214:11: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c:221:54: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  221 |           HAL_SPI_Transmit(&hspi2, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
+      |                                                      ^~~~~~
+../Core/Src/main.c:221:54: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:221:54: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:221:54: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM32Proj.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Proj.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Proj.elf
+ 
+arm-none-eabi-size  STM32Proj.elf 
+arm-none-eabi-objdump -h -S STM32Proj.elf  > "STM32Proj.list"
+   text	   data	    bss	    dec	    hex	filename
+  27156	    468	   2260	  29884	   74bc	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Proj.list
+ 
+21:47:04 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:210:11: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  210 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:210:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  210 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:210:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:214:11: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  214 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:214:11: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  214 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:214:11: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c:222:54: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  222 |           HAL_SPI_Transmit(&hspi2, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
+      |                                                      ^~~~~~
+../Core/Src/main.c:222:54: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:222:54: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:222:54: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM32Proj.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Proj.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Proj.elf
+ 
+arm-none-eabi-size  STM32Proj.elf 
+arm-none-eabi-objdump -h -S STM32Proj.elf  > "STM32Proj.list"
+   text	   data	    bss	    dec	    hex	filename
+  27180	    468	   2260	  29908	   74d4	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Proj.list
+ 
+21:49:05 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:210:11: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  210 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:210:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  210 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:210:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:214:11: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  214 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:214:11: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  214 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:214:11: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c:222:54: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  222 |           HAL_SPI_Transmit(&hspi2, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
+      |                                                      ^~~~~~
+../Core/Src/main.c:222:54: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:222:54: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:222:54: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM32Proj.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Proj.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Proj.elf
+ 
+arm-none-eabi-size  STM32Proj.elf 
+arm-none-eabi-objdump -h -S STM32Proj.elf  > "STM32Proj.list"
+   text	   data	    bss	    dec	    hex	filename
+  27180	    468	   2260	  29908	   74d4	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Proj.list
+ 
+21:49:22 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-size  STM32Proj.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27180	    468	   2260	  29908	   74d4	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+22:00:23 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:210:11: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  210 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:210:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  210 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:210:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:214:11: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  214 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:214:11: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  214 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:214:11: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c:222:54: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  222 |           HAL_SPI_Transmit(&hspi2, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
+      |                                                      ^~~~~~
+../Core/Src/main.c:222:54: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:222:54: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:222:54: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM32Proj.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Proj.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Proj.elf
+ 
+arm-none-eabi-size  STM32Proj.elf 
+arm-none-eabi-objdump -h -S STM32Proj.elf  > "STM32Proj.list"
+   text	   data	    bss	    dec	    hex	filename
+  27180	    468	   2260	  29908	   74d4	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Proj.list
+ 
+22:05:20 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:210:11: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  210 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:210:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  210 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:210:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:214:11: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  214 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:214:11: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  214 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:214:11: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c:222:54: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  222 |           HAL_SPI_Transmit(&hspi2, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
+      |                                                      ^~~~~~
+../Core/Src/main.c:222:54: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:222:54: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:222:54: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM32Proj.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Proj.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Proj.elf
+ 
+arm-none-eabi-size  STM32Proj.elf 
+arm-none-eabi-objdump -h -S STM32Proj.elf  > "STM32Proj.list"
+   text	   data	    bss	    dec	    hex	filename
+  27156	    468	   2260	  29884	   74bc	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Proj.list
+ 
+22:06:35 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-size  STM32Proj.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27156	    468	   2260	  29884	   74bc	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+23:46:26 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-size  STM32Proj.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27156	    468	   2260	  29884	   74bc	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+23:51:02 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:210:11: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  210 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:210:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  210 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:210:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:214:11: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  214 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:214:11: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  214 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:214:11: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c:222:54: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  222 |           HAL_SPI_Transmit(&hspi2, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
+      |                                                      ^~~~~~
+../Core/Src/main.c:222:54: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:222:54: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:222:54: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM32Proj.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Proj.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Proj.elf
+ 
+arm-none-eabi-size  STM32Proj.elf 
+arm-none-eabi-objdump -h -S STM32Proj.elf  > "STM32Proj.list"
+   text	   data	    bss	    dec	    hex	filename
+  27148	    468	   2260	  29876	   74b4	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Proj.list
+ 
+23:55:27 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:210:11: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  210 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:210:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  210 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:210:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:214:11: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  214 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:214:11: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  214 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:214:11: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c:222:54: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  222 |           HAL_SPI_Transmit(&hspi2, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
+      |                                                      ^~~~~~
+../Core/Src/main.c:222:54: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:222:54: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:222:54: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM32Proj.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Proj.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Proj.elf
+ 
+arm-none-eabi-size  STM32Proj.elf 
+arm-none-eabi-objdump -h -S STM32Proj.elf  > "STM32Proj.list"
+   text	   data	    bss	    dec	    hex	filename
+  27156	    468	   2260	  29884	   74bc	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Proj.list
+ 
+15:58:29 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:210:11: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  210 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:210:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  210 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:210:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:214:11: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  214 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:214:11: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  214 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:214:11: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c:220:54: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  220 |           HAL_SPI_Transmit(&hspi2, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
+      |                                                      ^~~~~~
+../Core/Src/main.c:220:54: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:220:54: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:220:54: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM32Proj.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Proj.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Proj.elf
+ 
+arm-none-eabi-size  STM32Proj.elf 
+arm-none-eabi-objdump -h -S STM32Proj.elf  > "STM32Proj.list"
+   text	   data	    bss	    dec	    hex	filename
+  27156	    468	   2260	  29884	   74bc	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Proj.list
+ 
+15:59:16 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-size  STM32Proj.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27156	    468	   2260	  29884	   74bc	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+16:02:23 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-size  STM32Proj.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27156	    468	   2260	  29884	   74bc	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+16:02:38 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-size  STM32Proj.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27156	    468	   2260	  29884	   74bc	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+16:06:14 **** Clean-only build of configuration Debug for project STM32Proj ****
+make -j20 clean 
+rm -rf ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.su
+rm -rf ./Core/Startup/startup_stm32f103rbtx.d ./Core/Startup/startup_stm32f103rbtx.o
+rm -rf ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32f1xx_hal_msp.cyclo ./Core/Src/stm32f1xx_hal_msp.d ./Core/Src/stm32f1xx_hal_msp.o ./Core/Src/stm32f1xx_hal_msp.su ./Core/Src/stm32f1xx_it.cyclo ./Core/Src/stm32f1xx_it.d ./Core/Src/stm32f1xx_it.o ./Core/Src/stm32f1xx_it.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32f1xx.cyclo ./Core/Src/system_stm32f1xx.d ./Core/Src/system_stm32f1xx.o ./Core/Src/system_stm32f1xx.su
+rm -rf STM32Proj.elf STM32Proj.list STM32Proj.map default.size.stdout
+rm: can't remove 'STM32Proj.elf': Permission denied
+make: [makefile:80: clean] Error 1 (ignored)
+ 
+16:06:14 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o"
+arm-none-eabi-gcc -mcpu=cortex-m3 -g -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f103rbtx.d" -MT"Core/Startup/startup_stm32f103rbtx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Startup/startup_stm32f103rbtx.o" "../Core/Startup/startup_stm32f103rbtx.s"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sysmem.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:210:11: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  210 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:210:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  210 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:210:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:214:11: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  214 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:214:11: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  214 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:214:11: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c:220:54: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  220 |           HAL_SPI_Transmit(&hspi2, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
+      |                                                      ^~~~~~
+../Core/Src/main.c:220:54: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:220:54: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:220:54: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc "../Core/Src/system_stm32f1xx.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f1xx.d" -MT"Core/Src/system_stm32f1xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32f1xx.o"
+arm-none-eabi-gcc -o "STM32Proj.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Proj.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Proj.elf
+ 
+arm-none-eabi-size  STM32Proj.elf 
+arm-none-eabi-objdump -h -S STM32Proj.elf  > "STM32Proj.list"
+   text	   data	    bss	    dec	    hex	filename
+  27156	    468	   2260	  29884	   74bc	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Proj.list
+ 
+16:07:44 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:210:11: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  210 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:210:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  210 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:210:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:214:11: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  214 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:214:11: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  214 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:214:11: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c:220:54: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  220 |           HAL_SPI_Transmit(&hspi2, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
+      |                                                      ^~~~~~
+../Core/Src/main.c:220:54: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:220:54: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:220:54: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM32Proj.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Proj.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Proj.elf
+ 
+arm-none-eabi-size  STM32Proj.elf 
+arm-none-eabi-objdump -h -S STM32Proj.elf  > "STM32Proj.list"
+   text	   data	    bss	    dec	    hex	filename
+  27156	    468	   2260	  29884	   74bc	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Proj.list
+ 
+16:17:11 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-size  STM32Proj.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27156	    468	   2260	  29884	   74bc	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+16:18:26 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:210:11: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  210 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:210:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  210 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:210:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:214:11: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  214 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:214:11: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  214 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:214:11: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c:218:54: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  218 |           HAL_SPI_Transmit(&hspi2, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
+      |                                                      ^~~~~~
+../Core/Src/main.c:218:54: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:218:54: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:218:54: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM32Proj.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Proj.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Proj.elf
+ 
+arm-none-eabi-size  STM32Proj.elf 
+arm-none-eabi-objdump -h -S STM32Proj.elf  > "STM32Proj.list"
+   text	   data	    bss	    dec	    hex	filename
+  27156	    468	   2260	  29884	   74bc	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Proj.list
+ 
+16:18:54 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-size  STM32Proj.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27156	    468	   2260	  29884	   74bc	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+16:20:19 **** Incremental Build of configuration Debug for project STM32Proj ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:210:11: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  210 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:210:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  210 |           printf("Temperature: %2.1f degC\n", tCelsius);
+      |           ^~~~~~
+../Core/Src/main.c:210:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:214:11: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  214 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:214:11: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  214 |           memcpy(buffer, data, sizeof(data));
+      |           ^~~~~~
+../Core/Src/main.c:214:11: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c:218:54: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  218 |           HAL_SPI_Transmit(&hspi2, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
+      |                                                      ^~~~~~
+../Core/Src/main.c:218:54: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:218:54: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:218:54: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM32Proj.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Proj.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Proj.elf
+ 
+arm-none-eabi-size  STM32Proj.elf 
+arm-none-eabi-objdump -h -S STM32Proj.elf  > "STM32Proj.list"
+   text	   data	    bss	    dec	    hex	filename
+  27156	    468	   2260	  29884	   74bc	STM32Proj.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Proj.list
+ 

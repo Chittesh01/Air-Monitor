@@ -903,3 +903,360 @@ java.lang.NullPointerException: Cannot invoke "org.eclipse.cdt.managedbuilder.co
 
 !ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 14:38:55.317
 !MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 17:40:57.062
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 17:43:59.049
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 17:44:23.354
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 17:57:15.990
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY org.eclipse.core.resources 4 77 2024-12-31 17:59:36.801
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-12-31 17:59:36.801
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-12-31 17:59:36.801
+!MESSAGE C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj overlaps the location of another project: 'STM32Proj'
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 18:00:21.910
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 18:02:29.389
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 18:06:41.750
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 18:16:15.180
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 18:20:20.797
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY org.eclipse.core.resources 4 77 2024-12-31 18:34:03.008
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-12-31 18:34:03.008
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-12-31 18:34:03.008
+!MESSAGE C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj overlaps the location of another project: 'STM32Proj'
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 18:34:35.535
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 18:35:26.868
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY org.eclipse.core.resources 4 77 2024-12-31 18:45:57.667
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-12-31 18:45:57.667
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-12-31 18:45:57.667
+!MESSAGE C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj overlaps the location of another project: 'STM32Proj'
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 18:46:39.917
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY org.eclipse.core.resources 4 77 2024-12-31 19:00:48.337
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-12-31 19:00:48.337
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-12-31 19:00:48.337
+!MESSAGE C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj overlaps the location of another project: 'STM32Proj'
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 19:02:04.903
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 19:10:31.479
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 19:11:25.373
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 19:12:41.743
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 19:22:44.485
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 19:26:39.830
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 19:26:58.201
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 19:35:20.722
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 19:36:03.026
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY org.eclipse.core.resources 4 77 2024-12-31 20:03:42.670
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-12-31 20:03:42.670
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-12-31 20:03:42.670
+!MESSAGE C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj overlaps the location of another project: 'STM32Proj'
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 20:04:18.469
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY org.eclipse.core.resources 4 77 2024-12-31 20:19:32.009
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-12-31 20:19:32.009
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-12-31 20:19:32.009
+!MESSAGE C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj overlaps the location of another project: 'STM32Proj'
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 20:21:05.483
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY org.eclipse.core.resources 4 77 2024-12-31 20:45:58.009
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-12-31 20:45:58.009
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-12-31 20:45:58.009
+!MESSAGE C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj overlaps the location of another project: 'STM32Proj'
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 20:47:35.119
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 20:48:42.164
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 40000000; div: 20
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 20:51:49.066
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 40000000; div: 20
+
+!ENTRY org.eclipse.core.resources 4 77 2024-12-31 20:57:42.215
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-12-31 20:57:42.215
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-12-31 20:57:42.215
+!MESSAGE C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj overlaps the location of another project: 'STM32Proj'
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 4 2024-12-31 21:00:18.297
+!MESSAGE NullPointerException while trying to calculated source lookup path. This can be ignored if it occurs while terminating a debug session. See Bug 500988.
+!STACK 0
+java.lang.NullPointerException: Cannot read the array length because "containers" is null
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupDirector.collectSubstitutionsPaths(GdbSourceLookupDirector.java:102)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupDirector.collectSubstitutionsPaths(GdbSourceLookupDirector.java:146)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupDirector.getSubstitutionsPaths(GdbSourceLookupDirector.java:72)
+	at org.eclipse.cdt.dsf.gdb.service.GDBSourceLookup.getSubstitutionsPaths(GDBSourceLookup.java:124)
+	at org.eclipse.cdt.dsf.gdb.service.GDBSourceLookup.sourceContainersChanged(GDBSourceLookup.java:139)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupParticipant.sourceContainersChangedOnDispatchThread(GdbSourceLookupParticipant.java:120)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupParticipant$1.run(GdbSourceLookupParticipant.java:85)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 21:00:31.886
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 10000000; div: 5
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 21:00:47.489
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 10000000; div: 5
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 21:02:32.036
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 10000000; div: 5
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 21:11:57.296
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 10000000; div: 5
+
+!ENTRY org.eclipse.core.resources 4 77 2024-12-31 21:44:32.315
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-12-31 21:44:32.315
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-12-31 21:44:32.315
+!MESSAGE C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj overlaps the location of another project: 'STM32Proj'
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 21:47:12.890
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 10000000; div: 5
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 21:49:13.024
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 10000000; div: 5
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 21:49:29.428
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 10000000; div: 5
+
+!ENTRY org.eclipse.core.resources 4 77 2024-12-31 22:00:15.947
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-12-31 22:00:15.947
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-12-31 22:00:15.947
+!MESSAGE C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj overlaps the location of another project: 'STM32Proj'
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 22:00:31.565
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 10000000; div: 5
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 22:05:27.338
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 10000000; div: 5
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 22:06:42.471
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 10000000; div: 5
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 23:46:33.319
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 10000000; div: 5
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 23:51:11.134
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 10000000; div: 5
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-12-31 23:55:35.727
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 10000000; div: 5
+
+!ENTRY org.eclipse.core.jobs 4 2 2025-01-01 00:37:48.080
+!MESSAGE An internal error occurred during: "Execute Debug Command".
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: The application has not been initialized.
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:119)
+	at org.eclipse.core.internal.runtime.InternalPlatform.assertInitialized(InternalPlatform.java:183)
+	at org.eclipse.core.internal.runtime.InternalPlatform.getAdapterManager(InternalPlatform.java:204)
+	at org.eclipse.core.runtime.Platform.getAdapterManager(Platform.java:662)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getAdapter(GdbLaunch.java:454)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.disconnect(GdbLaunch.java:338)
+	at org.eclipse.debug.internal.core.commands.DisconnectCommand.execute(DisconnectCommand.java:35)
+	at org.eclipse.debug.internal.core.commands.ForEachCommand.doExecute(ForEachCommand.java:36)
+	at org.eclipse.debug.core.commands.AbstractDebugCommand$1.run(AbstractDebugCommand.java:215)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 2 2 2025-01-01 00:37:48.412
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.cdt.dsf.gdb.internal.ui.console.GdbBasicCliConsole$InputReadJob
+!SESSION 2025-01-01 15:42:13.873 -----------------------------------------------
+eclipse.buildId=Version 1.17.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-01-01 15:42:28.921
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-01-01 15:42:28.921
+!MESSAGE Log4j2 initialized with config file C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-01-01 15:42:33.380
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.ui.workbench 4 2 2025-01-01 15:46:09.579
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.cdt.managedbuilder.core.IManagedBuildInfo.getDefaultConfiguration()" because "buildInfo" is null
+	at com.st.stm32cube.ide.mcu.build.ui.decorator.BoldDecorator.decorate(BoldDecorator.java:79)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui 4 4 2025-01-01 15:46:09.580
+!MESSAGE Exception in Decorator. The 'linkerDecorator' decorator will be disabled.
+!SUBENTRY 1 org.eclipse.ui 4 4 2025-01-01 15:46:09.580
+!MESSAGE Cannot invoke "org.eclipse.cdt.managedbuilder.core.IManagedBuildInfo.getDefaultConfiguration()" because "buildInfo" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.cdt.managedbuilder.core.IManagedBuildInfo.getDefaultConfiguration()" because "buildInfo" is null
+	at com.st.stm32cube.ide.mcu.build.ui.decorator.BoldDecorator.decorate(BoldDecorator.java:79)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-01 15:58:21.542
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-01 15:58:21.542
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-01 15:58:21.542
+!MESSAGE C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj overlaps the location of another project: 'STM32Proj'
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-01-01 15:58:38.277
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 10000000; div: 5
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-01-01 15:59:23.814
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 10000000; div: 5
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-01-01 16:02:30.593
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 10000000; div: 5
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2025-01-01 16:02:32.710
+!MESSAGE Error in final launch sequence:
+
+Setup exceptions
+!STACK 1
+org.eclipse.core.runtime.CoreException: Setup exceptions
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:252)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 com.st.stm32cube.ide.mcu.debug.launch 4 0 2025-01-01 16:02:32.710
+!MESSAGE Setup exceptions
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-01-01 16:02:45.518
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 10000000; div: 5
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-01 16:06:08.639
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-01 16:06:08.639
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-01 16:06:08.639
+!MESSAGE C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj overlaps the location of another project: 'STM32Proj'
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-01-01 16:06:23.100
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 10000000; div: 5
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-01 16:07:14.544
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-01 16:07:14.544
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-01 16:07:14.544
+!MESSAGE C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj overlaps the location of another project: 'STM32Proj'
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-01-01 16:07:51.454
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 10000000; div: 5
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-01-01 16:07:53.540
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 5 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-01-01 16:07:53.541
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-01-01 16:07:53.541
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 5 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-01-01 16:07:53.542
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-01-01 16:17:18.163
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 10000000; div: 5
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-01-01 16:18:34.451
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 10000000; div: 5
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-01-01 16:19:01.207
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-01 16:20:12.766
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-01 16:20:12.766
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-01 16:20:12.766
+!MESSAGE C:\Users\Oazis\Desktop\University\Summer Research Project\STM32project\Embedded-C\AirMonitor\STM32Proj overlaps the location of another project: 'STM32Proj'
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-01-01 16:20:26.942
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36

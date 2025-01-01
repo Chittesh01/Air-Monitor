@@ -1,14 +1,13 @@
 #include "driver/gpio.h"
 #include "driver/spi_master.h"
+#include "driver/spi_slave.h"
 #include "freertos/FreeRTOS.h"
 #include <Arduino.h>
 #include <BLE2902.h>
 #include <BLEDevice.h>
 #include <BLEServer.h>
-#include <SPI.h>
 #include <stdio.h>
 #include <string>
-
 
 #define MOSI_PIN 23 // Master Out, Slave In
 #define MISO_PIN 19 // Master In, Slave Out
@@ -16,11 +15,15 @@
 #define CS_PIN 5    // Chip Select
 
 volatile bool dataReceived = false, deviceConnected = false;
-byte receivedData[12]; // Buffer to store received data
+uint8_t sendbuf = 0;
+char recvbuf[20] = {0};
 
 BLECharacteristic *pCharacteristic;
 BLEAdvertising *pAdvertising;
 String string;
+
+spi_slave_transaction_t t;
+spi_device_handle_t handle;
 
 #define SERVICE_UUID "12345678-1234-1234-1234-123456789012"
 #define CHARACTERISTIC_UUID "87654321-4321-4321-4321-210987654321"
@@ -37,12 +40,33 @@ class MyServerCallbacks : public BLEServerCallbacks {
 void setup() {
   pinMode(LED_BUILTIN, OUTPUT);
 
-  SPI.begin(SCK, MISO, MOSI, SS); // Initialize SPI with SS
-  // attachInterrupt(digitalPinToInterrupt(CS_PIN),
-  //                 FALLING); // CS low means data is ready
-  SPI.beginTransaction(SPISettings(281250, MSBFIRST, SPI_MODE0));
-
+  // Common baud rate, using a faster rate could introduce more errors
   Serial.begin(115200);
+
+  spi_bus_config_t spi_slave_config = {
+      .mosi_io_num = MOSI,
+      .sclk_io_num = SCK,
+  };
+
+  //  No need to setup device as slave synchronizes according to SCLK
+  // spi_device_interface_config_t spi_stm32_confg = {
+  //     .mode = 0,
+  //     .duty_cycle_pos = 128,
+  //     .clock_speed_hz = // prescaler of ESP32 can be set from 2 to 65536,
+  //         2250000,      // allowing for flexible clock frequencies
+  //     .queue_size = 1};
+
+  spi_slave_interface_config_t spi_slave_confg = {
+      .spics_io_num = SS, .queue_size = 1, .mode = 0};
+
+  spi_slave_initialize(SPI2_HOST, &spi_slave_config, &spi_slave_confg,
+                       SPI_DMA_DISABLED);
+  // spi_bus_add_device(SPI2_HOST, &spi_stm32_confg, &handle);
+
+  memset(&t, 0, sizeof(t));
+  t.length = sizeof(recvbuf) * 8;
+  t.tx_buffer = &sendbuf;
+  t.rx_buffer = recvbuf;
 
   BLEDevice::init("ESP32_BLE");
 
@@ -52,13 +76,16 @@ void setup() {
   BLEService *pService = pServer->createService(SERVICE_UUID);
   pCharacteristic = pService->createCharacteristic(
       CHARACTERISTIC_UUID,
-      BLECharacteristic::PROPERTY_READ | BLECharacteristic::PROPERTY_NOTIFY);
+      BLECharacteristic::PROPERTY_READ |       // Send a notification and allow
+          BLECharacteristic::PROPERTY_NOTIFY); // receiver to read
 
   pCharacteristic->addDescriptor(new BLE2902());
 
   pService->start();
   pAdvertising = BLEDevice::getAdvertising();
   pAdvertising->start();
+
+  delay(1000);
 }
 
 void loop() {
@@ -70,13 +97,8 @@ void loop() {
   //  pCharacteristic->notify();
   //  digitalWrite(LED_BUILTIN, LOW);
 
-  if (digitalRead(CS_PIN) == LOW) {
-    for (int i = 0; i < 11; i++) {
-      receivedData[i] = SPI.transfer(0x00); // Dummy transfer to receive data
-      Serial.print(receivedData[i], HEX);
-      //    memcpy(&string[i], &receivedData[i], sizeof(char));
-    }
-  }
+  spi_slave_transmit(SPI2_HOST, &t,  // Blocks until data is received through
+                     portMAX_DELAY); // SPI, never times out
 
-  // dataReceived = false;
+  Serial.println(recvbuf);
 }
