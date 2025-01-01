@@ -16,7 +16,8 @@
 
 volatile bool dataReceived = false, deviceConnected = false;
 uint8_t sendbuf = 0;
-char recvbuf[20] = {0};
+float recvbuf[3] = {0};
+char values[20] = {0};
 
 BLECharacteristic *pCharacteristic;
 BLEAdvertising *pAdvertising;
@@ -34,11 +35,16 @@ class MyServerCallbacks : public BLEServerCallbacks {
   void onDisconnect(BLEServer *pServer) {
     deviceConnected = false;
     pAdvertising->start();
+    gpio_set_level(GPIO_NUM_2, LOW);
   }
 };
 
 void setup() {
-  pinMode(LED_BUILTIN, OUTPUT);
+  gpio_config_t io_conf = {
+      .pin_bit_mask = (1U << GPIO_NUM_2),
+      .mode = GPIO_MODE_INPUT_OUTPUT,
+  };
+  gpio_config(&io_conf);
 
   // Common baud rate, using a faster rate could introduce more errors
   Serial.begin(115200);
@@ -84,21 +90,20 @@ void setup() {
   pService->start();
   pAdvertising = BLEDevice::getAdvertising();
   pAdvertising->start();
-
-  delay(1000);
 }
 
 void loop() {
   // Logic to periodically send data
 
-  // digitalWrite(LED_BUILTIN, HIGH);
-  // float value1 = 27.2, value2 = 28.2;
-  //  pCharacteristic->setValue((uint8_t *)data, sizeof(data));
-  //  pCharacteristic->notify();
-  //  digitalWrite(LED_BUILTIN, LOW);
-
   spi_slave_transmit(SPI2_HOST, &t,  // Blocks until data is received through
                      portMAX_DELAY); // SPI, never times out
+  // sprintf(values, "%.2f-%.2f-%.2f", recvbuf[0], recvbuf[1], recvbuf[2]);
+  // Serial.println(values);
 
-  Serial.println(recvbuf);
+  if (deviceConnected) {
+    pCharacteristic->setValue((uint8_t *)recvbuf, sizeof(recvbuf));
+    pCharacteristic->notify();
+
+    gpio_set_level(GPIO_NUM_2, !gpio_get_level(GPIO_NUM_2));
+  }
 }

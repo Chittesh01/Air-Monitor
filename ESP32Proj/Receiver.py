@@ -1,5 +1,5 @@
 from bleak import BleakClient
-import struct   #study this
+import struct
 import msvcrt
 
 # Define the ESP32 address and characteristic UUID
@@ -7,9 +7,10 @@ address = "CC:DB:A7:9B:5D:76"  # MAC address of ESP32_BLE
 characteristic_uuid = "87654321-4321-4321-4321-210987654321"
 
 async def on_data_received(sender: int, value: bytearray):
-    values = struct.unpack('ff', value)  # 'ff' represents 2 floats
-    print(f"Temperature: {values[0]:.1f}")
-    print(f"Temperature: {values[1]:.1f}\n")
+    values = struct.unpack('fff', value)  # 'fff' represents 3 floats
+    print(f"Temperature: {values[0]:.1f} °C")
+    print(f"Temperature: {values[1]:.1f} °F")
+    print(f"Humidity: {values[2]:.1f}%\n")
 
 async def main():
     async with BleakClient(address) as client:

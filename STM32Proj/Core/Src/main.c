@@ -50,7 +50,6 @@ UART_HandleTypeDef huart2;
 /* USER CODE BEGIN PV */
 float data[3];
 uint8_t buffer[sizeof(data)];
-uint8_t buffer1;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -213,9 +212,9 @@ int main(void)
 	  data[0] = tCelsius; data[1] = tFahrenheit; data[2] = RH;
 	  memcpy(buffer, data, sizeof(data));
 
-	  char string[] = "Hello World";
+	  //char string[] = "Hello World";
 
-	  HAL_SPI_Transmit(&hspi2, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
+	  HAL_SPI_Transmit(&hspi2, buffer, sizeof(data), HAL_MAX_DELAY);
 
 	  SPI2->CR1 &= ~SPI_CR1_SPE;  // Disable SPI2
 
