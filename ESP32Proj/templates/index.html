@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebSocket Interface</title>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const socket = io("http://127.0.0.1:12000");  // Connect to server
+
+            // Handle connection
+            socket.on("connect", () => {
+                console.log("Connected to server");
+            });
+
+            // Handle receiving float values
+            socket.on("update", (data) => {         //Javascript
+
+                const display = document.getElementById("values");
+
+                // Display each value on a separate line
+                display.innerHTML = `
+                    Temperature: ${data.values[0].toFixed(1)} °C, ${data.values[1].toFixed(1)} °F<br>
+                    Humidity: ${data.values[2].toFixed(1)}%
+                `
+            });
+
+            // Handle disconnect
+            socket.on("disconnect", () => {
+                console.log("Disconnected from the server.");
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Air-Monitor</h1>
+    <p id="values">Waiting for updates...</p>
+</body>
+</html>

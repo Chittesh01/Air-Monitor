@@ -7,12 +7,13 @@ import struct
 import msvcrt
 
 app = Flask(__name__)
-socketio = SocketIO(app, async_mode='threading')
+socketio = SocketIO(app, async_mode='threading', cors_allowed_origins=["http://localhost:12000"])
 values = []
+
 
 @app.route('/')
 def index():
-    return "Refer to Client.py"
+    return render_template("index.html")
 
 # Define the ESP32 address and characteristic UUID
 address = "CC:DB:A7:9B:5D:76"  # MAC address of ESP32_BLE
